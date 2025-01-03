@@ -8,11 +8,80 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <None Remove="Protos\ProductService.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\gRPC_AspNetCore.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\gRPC_AspNetCore.GlobalUsings.g.cs" />
+    <Compile Include="obj\Debug\net8.0\Protos\Greet.cs" />
+    <Compile Include="obj\Debug\net8.0\Protos\GreetGrpc.cs" />
+    <Compile Include="obj\Debug\net8.0\Protos\ProductService.cs" />
+    <Compile Include="obj\Debug\net8.0\Protos\ProductServiceGrpc.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net8.0\appsettings.json" />
+    <Content Include="bin\Debug\net8.0\gRPC_AspNetCore.deps.json" />
+    <Content Include="bin\Debug\net8.0\gRPC_AspNetCore.runtimeconfig.json" />
+    <Content Include="obj\Debug\net8.0\gRPC_AspNetCore.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0\gRPC_AspNetCore.sourcelink.json" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.build.json" />
+    <Content Include="obj\gRPC_AspNetCore.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0\Google.Protobuf.dll" />
+    <None Include="bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll" />
+    <None Include="bin\Debug\net8.0\Grpc.AspNetCore.Server.dll" />
+    <None Include="bin\Debug\net8.0\Grpc.Core.Api.dll" />
+    <None Include="bin\Debug\net8.0\Grpc.Net.Client.dll" />
+    <None Include="bin\Debug\net8.0\Grpc.Net.ClientFactory.dll" />
+    <None Include="bin\Debug\net8.0\Grpc.Net.Common.dll" />
+    <None Include="bin\Debug\net8.0\gRPC_AspNetCore.dll" />
+    <None Include="bin\Debug\net8.0\gRPC_AspNetCore.exe" />
+    <None Include="bin\Debug\net8.0\gRPC_AspNetCore.pdb" />
+    <None Include="obj\Debug\net8.0\12fbc7ffe642ca7e_ProductService.protodep" />
+    <None Include="obj\Debug\net8.0\apphost.exe" />
+    <None Include="obj\Debug\net8.0\gRPC_Asp.EC25850B.Up2Date" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.assets.cache" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.dll" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net8.0\gRPC_AspNetCore.pdb" />
+    <None Include="obj\Debug\net8.0\refint\gRPC_AspNetCore.dll" />
+    <None Include="obj\Debug\net8.0\ref\gRPC_AspNetCore.dll" />
+    <None Include="obj\Debug\net8.0\staticwebassets\msbuild.build.gRPC_AspNetCore.props" />
+    <None Include="obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.gRPC_AspNetCore.props" />
+    <None Include="obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.gRPC_AspNetCore.props" />
+    <None Include="obj\gRPC_AspNetCore.csproj.nuget.g.props" />
+    <None Include="obj\gRPC_AspNetCore.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\ProductService.proto" GrpcServices="Server" />
   </ItemGroup>
 
 </Project>
